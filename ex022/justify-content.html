@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+    <style>
+        .container {
+            max-width: 400px;
+            border: solid 1px black;
+            margin: 0;
+            display: flex;
+
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            margin-right: 15px;
+            background-color: rgb(232, 226, 219);
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .flex-center{
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-container</h1>
+    <section class="container">
+        <div class="item">1</div>
+        <div class="item">item2</div>
+        <div class="item">outro item1</div>
+        <div class="item">outro item2</div>
+    </section>
+
+    <h1>flex-starter</h1>
+    <section class="container flex-starter flex-center">
+        <div class="item">1</div>
+        <div class="item">item2</div>
+        <div class="item">outro item1</div>
+        <div class="item">outro item2</div>
+    </section>
+
+    <h1>flex-starter</h1>
+    <section class="container flex-starter flex-end">
+        <div class="item">1</div>
+        <div class="item">item2</div>
+        <div class="item">outro item1</div>
+        <div class="item">outro item2</div>
+    </section>
+
+</body>
+
+</html>
