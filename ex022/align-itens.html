@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Itens</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: solid 1px black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <p>Center</p>
+    <section class="container center flex">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectet</div>
+        <div class="item">Lorem ipsum dolor sit amet,.</div>
+    </section>
+
+    <p>strectch</p>
+    <section class="container center strectch">
+        <div class="item">Item 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, aspernatur? Culpa, officia. Temporibus error dolorum veniam sit recusandae, obcaecati magni laboriosam distinctio earum eius expedita quas quod blanditiis, harum quisquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectet</div>
+        <div class="item">Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero iusto provident assumenda quaerat, hic voluptate magni molestiae molestias dolorum necessitatibus laborum, consequuntur debitis atque sint odit sapiente, doloribus illum.</div>
+    </section>
+</body>
+</html>
