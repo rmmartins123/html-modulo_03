@@ -1,20 +1,79 @@
 @charset "UTF-8";
-body{
 
+/*  ZERAR TODOS OS ELEMENTOS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header p{
+    padding-bottom: 50px;
+}
+
+header h1{
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
 }
 
 section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: black;
+    color: white;
 
 }
 
-h1{
+section.imagem > p{
+    background-color: rgb(55, 53, 53);
+    color: white;
+    border: solid 1px white;
+    width: 400px;
+}
+
+
+/*CONFIGURAÇÃO DO LINK*/
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*CONFIGURAÇÃO DO LINK*/
+a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    padding: 20px;
     
 }
 
-p{
-
-}
-
 footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
 
 }
